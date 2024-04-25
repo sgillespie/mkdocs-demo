@@ -10,7 +10,10 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in {
         devShells.default = with pkgs; mkShell {
-          buildInputs = [mkdocs];
+          buildInputs = [
+            mkdocs
+            python312Packages.pip
+          ];
         };
       });
 }
