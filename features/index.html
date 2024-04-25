@@ -4,17 +4,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>MkDocs Demo</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Features - MkDocs Demo</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -22,10 +22,10 @@
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">MkDocs Demo</a>
+                <a class="navbar-brand" href="..">MkDocs Demo</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,10 +36,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Welcome</a>
+                                <a href=".." class="nav-link">Welcome</a>
                             </li>
                             <li class="nav-item">
-                                <a href="features/" class="nav-link">Features</a>
+                                <a href="./" class="nav-link active" aria-current="page">Features</a>
                             </li>
                         </ul>
 
@@ -50,17 +50,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="features/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/sgillespie/mkdocs-demo/edit/main/docs/index.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/sgillespie/mkdocs-demo/edit/main/docs/features.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
                             </li>
                             <li class="nav-item dropdown">
                               <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <script src="js/darkmode.js"></script>
+        <script src="../js/darkmode.js"></script>
 
         <div class="container">
             <div class="row">
@@ -110,13 +110,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
+            <li class="nav-item" data-bs-level="1"><a href="#features" class="nav-link">Features</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            <li class="nav-item" data-bs-level="2"><a href="#markup" class="nav-link">Markup</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -127,21 +123,72 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="features">Features</h1>
+<p>MkDocs is a static site generator for markdown.</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Open Source (<a href="https://opensource.org/license/bsd-2-clause">BSD 2-clause</a>)</li>
+<li>Themes<ul>
+<li>MkDocs</li>
+<li>Read the Docs</li>
+<li>and many more third-party themes</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+</li>
+<li>Built-in Dev Server</li>
+<li>Customization<ul>
+<li>Themes</li>
+<li>Markdown Extensions</li>
+<li>Configuration</li>
+</ul>
+</li>
+<li>Easy deployment<ul>
+<li>GitHub Pages</li>
+<li>Read the Docs</li>
+<li>Backstage Developer Portal</li>
+<li>Or any static HTML server</li>
+</ul>
+</li>
+</ul>
+<h2 id="markup">Markup</h2>
+<p>Syntax Highlighting (Haskell):</p>
+<pre><code class="language-haskell">-- | Identity function
+id :: a -&gt; a
+id x = x
+</code></pre>
+<blockquote>
+<p>Block quotes</p>
+</blockquote>
+<p>Tables:</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th>Columns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>Value</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Value</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Value</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Value</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Value</td>
+</tr>
+</tbody>
+</table>
+<p><em>Smart</em> Characters: &rsquo; &rdquo;  &lt;&lt; &gt;&gt; &hellip; &ndash; &mdash;</p></div>
             </div>
         </div>
 
@@ -149,13 +196,13 @@ docs/
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -220,8 +267,3 @@ docs/
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.0
-Build Date UTC : 1980-01-01 00:00:00+00:00
--->
